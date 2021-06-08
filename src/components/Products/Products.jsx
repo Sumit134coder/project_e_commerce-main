@@ -10,7 +10,7 @@ const Products = ({ products, onAddToCart }) => {
   if (!products.length) return <p>Loading...</p>;
 
   return (
-    <main className={classes.content}>
+    <main className={classes.content} style = {{ background: "linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9)" , height:"100vh"  }}>
       <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}>
         {products.map((product) => (
